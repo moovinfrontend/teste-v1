@@ -451,6 +451,9 @@ body {
 /* Main-content */ 
 
 #main-content {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   background: url('../img/banner_principal_mobile.jpg') no-repeat top center fixed;
   min-height: 450px;
@@ -459,10 +462,7 @@ body {
 
 @media (min-width: 768px) {
   #main-content {
-    background-size: cover;
     background: url('../img/banner_principal.jpg') no-repeat top center fixed;
-    min-height: 450px;
-    width: auto;
   }
 }
 
