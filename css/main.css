@@ -578,7 +578,13 @@ body {
   display: block;
   margin: auto;
   max-height: 350px;
-  width: auto;
+  max-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .align-items {
+    max-width: auto;
+  }
 }
 
 .hidden {
