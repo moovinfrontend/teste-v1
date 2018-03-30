@@ -563,8 +563,9 @@ body {
   font-size: 0.8rem
 }
 
-.slider-content ul {
-  min-height: 400px;
+
+.slider-content {
+  padding-bottom: 90px;
 }
 
 .slider-content a {
@@ -576,13 +577,21 @@ body {
 .align-items {
   display: block;
   margin: auto;
-  max-height: 350px;
-  max-width: 300px;
+  max-height: 380px;
+  max-width: 200px;
 }
 
-@media (min-width: 768px) {
+.slider-content ul {
+  min-height:380px;
+}
+
+@media (min-width: 768px) {  
   .align-items {
-    max-width: auto;
+    min-width: 300px;
+    max-width: 500px;
+  }
+  .slider-content ul {
+    min-height:500px;
   }
 }
 
