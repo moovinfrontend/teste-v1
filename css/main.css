@@ -509,10 +509,11 @@ body {
   }
 }
 
-#featured-products ul a li{
+#featured-products ul li{
   text-transform: uppercase;
   text-decoration: none;
   color: #333333;
+  cursor: pointer;
 }
 
 /* Jquery f(eatured)-menu */
