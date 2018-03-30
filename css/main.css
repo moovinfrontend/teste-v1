@@ -455,7 +455,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: url('../img/banner_principal_mobile.jpg') no-repeat top center fixed;
+  background: url('../img/banner_principal_mobile.jpg') no-repeat top center scroll;
   min-height: 450px;
   width: auto;
 }
