@@ -563,9 +563,8 @@ body {
   font-size: 0.8rem
 }
 
-
-.slider-content {
-  padding-bottom: 90px;
+.slider-content ul {
+  min-height: 400px;
 }
 
 .slider-content a {
