@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Igor Thurow">
+    <meta property="og:image" content="">
+    <!-- Open Graphs meta tags -->
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta property="og:description" content="Moovin Front-End challenge. Reproduce an PSD.">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/css/lightslider.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.5/js/lightslider.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Main CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+    <!-- Google Fonts -->
+    <title>Moovin - Front-End Challenge</title>
+</head>
+
+<body>
+    <!-- Top info -->
+    <header id="top">
+        <div class="columns-grid hidden-top">
+            <!-- Mobile top header show/hide -->
+            <div id="hidden-btn">
+                <img src="img/arrow-down.png" class="setup-hidden">
+            </div>
+        </div>
+        <div class="columns-grid top-header">
+            <div class="grid-control boxed">
+                <span class="icon logi">
+                    <a href="#0">Entre</a> ou
+                    <a href="#0">cadastre-se</a>
+                </span>
+                <span class="icon comp">
+                    <a href="#0">Empresa</a>
+                </span>
+                <span class="icon stor">
+                    <a href="#0">Nossas Lojas</a>
+                </span>
+                <span class="icon chat">
+                    <a href="#0">Chat Online</a>
+                </span>
+                <span class="icon numb">
+                    <a href="tel:5130263833"> 51 3026-3833</a>
+                </span>
+                <!-- Phone number clickable link on smartphones -->
+                <span class="icon wish">
+                    <a href="#0">Lista de desejos</a>
+                </span>
+                <span class="icon wapp">
+                    <a href="tel:51981946716"> 51 98194-6716</a>
+                </span>
+                <span class="icon prod">
+                    <a href="#0">Meus pedidos</a>
+                </span>
+            </div>
+        </div>
+        <!-- Header / brand -->
+        <div class="columns-grid main-header">
+            <div class="grid-control boxed">
+                <img src="img/logo.png" class="col-value-2" alt="Logo Moovin">
+                <form action="" class="col-value-4" method="post" enctype="multipart/form-data">
+                    <input class="field-search" type="text" name="pesquisa" autocomplete="off" placeholder="O que você está procurando?" />
+                    <button type="submit" title="Pesquisar" class="icon-mag"></button>
+                </form>
+                <div class="col-value-2 cart">
+                    <span class="cart-title">Meu carrinho
+                        <br>
+                        <span class="cart-items">10 itens | R$ 200,00</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="grid-control boxed">
+                <span class="drop border-control">
+                    <a href="#0">
+                        <img src="img/categorias/surf.png" class="navicon">Surf</a>
+                    <!-- Main menu and dropdown setup starts here -->
+                    <div class="dropdown-content">
+                        <ul class="col-1">
+                            <h3 class="category-title">Roupas</h3>
+                            <a href="#0">
+                                <li>Camisetas </li>
+                            </a>
+                            <a href="#0">
+                                <li>Calças </li>
+                            </a>
+                            <a href="#0">
+                                <li>Jaquetas </li>
+                            </a>
+                            <a href="#0">
+                                <li>Polo </li>
+                            </a>
+                        </ul>
+                        <ul class="col-2">
+                            <h3 class="category-title">Equipamentos</h3>
+                            <a href="#0">
+                                <li>Roupas de borracha </li>
+                            </a>
+                            <a href="#0">
+                                <li>Leash </li>
+                            </a>
+                            <a href="#0">
+                                <li>Parafina </li>
+                            </a>
+                            <a href="#0">
+                                <li>Lycras </li>
+                            </a>
+                            </a>
+                            <a href="#0">
+                                <li>Decks </li>
+                            </a>
+                            </a>
+                            <a href="#0">
+                                <li>Quilhas </li>
+                            </a>
+                            <!-- 'col-nest' is used to add columns below the col-1 and col-2 -->
+                            <ul class="col-nest">
+                                <h3 class="category-title">Natação/Mergulho</h3>
+                                <a href="#0">
+                                    <li>Máscara e Snorkel </li>
+                                </a>
+                                <a href="#0">
+                                    <li>Óculos de natação </li>
+                                </a>
+                                <a href="#0">
+                                    <li>Nadadeiras </li>
+                                </a>
+                            </ul>
+                        </ul>
+                        <!-- Close col-2 and col-nest -->
+                    </div>
+                </span>
+                <span class="drop">
+                    <a href="#0">
+                        <img src="img/categorias/skate.png" class="navicon">Skate</a>
+                    <div class="dropdown-content">
+                        <ul class="col-1">
+                            <h3 class="category-title">Skates</h3>
+                            <a href="#0">
+                                <li>Street </li>
+                            </a>
+                            <a href="#0">
+                                <li>Cruiser </li>
+                            </a>
+                            <a href="#0">
+                                <li>Longboard </li>
+                            </a>
+                            <a href="#0">
+                                <li>Fingerboard </li>
+                            </a>
+                            <ul class="col-nest">
+                                <h3 class="category-title">Roupas</h3>
+                                <a href="#0">
+                                    <li>Camisetas </li>
+                                </a>
+                                <a href="#0">
+                                    <li>Calças </li>
+                                </a>
+                                <a href="#0">
+                                    <li>Bermudas </li>
+                                </a>
+                                <a href="#0">
+                                    <li>Regatas </li>
+                                </a>
+                            </ul>
+                        </ul>
+                        </ul>
+                        <!-- Close col-1 and col-nest-->
+                        <ul class="col-2">
+                            <h3 class="category-title">Peças de skate</h3>
+                            <a href="#0">
+                                <li>Acessórios </li>
+                            </a>
+                            <a href="#0">
+                                <li>Capacetes </li>
+                            </a>
+                            <a href="#0">
+                                <li>Proteções </li>
+                            </a>
+                            <a href="#0">
+                                <li>Shapes </li>
+                            </a>
+                        </ul>
+                    </div>
+                </span>
+                <span class="drop">
+                    <a href="#0">
+                        <img src="img/categorias/roupas.png" class="navicon">Roupas</a>
+                    <div class="dropdown-content">
+                        <ul class="col-1">
+                            <h3 class="category-title">Masculino</h3>
+                            <a href="#0">
+                                <li>Camisetas </li>
+                            </a>
+                            </a>
+                            <a href="#0">
+                                <li>Regatas </li>
+                            </a>
+                            <a href="#0">
+                                <li>Camisas </li>
+                            </a>
+                            <a href="#0">
+                                <li>Calças </li>
+                            </a>
+                            <a href="#0">
+                                <li>Bermudas </li>
+                            </a>
+                            <a href="#0">
+                                <li>Cuecas </li>
+                            </a>
+                            <a href="#0">
+                                <li>Meias </li>
+                            </a>
+                            <a href="#0">
+                                <li>Moletons </li>
+                            </a>
+                            <a href="#0">
+                                <li>Jaquetas </li>
+                            </a>
+                        </ul>
+                        <ul class="col-2">
+                            <h3 class="category-title">Feminino</h3>
+                            <a href="#0">
+                                <li>Blusas </li>
+                            </a>
+                            <a href="#0">
+                                <li>Cropped </li>
+                            </a>
+                            <a href="#0">
+                                <li>Camisetas </li>
+                            </a>
+                            <a href="#0">
+                                <li>Shorts </li>
+                            </a>
+                            <a href="#0">
+                                <li>Shorts </li>
+                            </a>
+                            <a href="#0">
+                                <li>Vestidos </li>
+                            </a>
+                            <a href="#0">
+                                <li>Macacões </li>
+                            </a>
+                            <a href="#0">
+                                <li>Calças </li>
+                            </a>
+                            <a href="#0">
+                                <li>Saias </li>
+                            </a>
+                        </ul>
+                    </div>
+                </span>
+                <span class="drop">
+                    <a href="#0">
+                        <img src="img/categorias/tenis.png" class="navicon">Tênis</a>
+                    <div class="dropdown-content">
+                        <ul class="col-1">
+                            <h3 class="category-title">Categoria</h3>
+                            <a href="#0">
+                                <li>Masculino</li>
+                            </a>
+                            <a href="#0">
+                                <li>Feminino</li>
+                            </a>
+                            <a href="#0">
+                                <li>Tênis </li>
+                            </a>
+                            <a href="#0">
+                                <li>Chinelo </li>
+                            </a>
+                            <a href="#0">
+                                <li>Tênis infantil </li>
+                            </a>
+                            <a href="#0">
+                                <li>Palmilha</li>
+                            </a>
+                        </ul>
+                        <ul class="col-2">
+                            <h3 class="category-title">Marca</h3>
+                            <a href="#0">
+                                <li>Adidas </li>
+                            </a>
+                            <a href="#0">
+                                <li>DC Shoes </li>
+                            </a>
+                            <a href="#0">
+                                <li>Hocks </li>
+                            </a>
+                            <a href="#0">
+                                <li>Nike SB </li>
+                            </a>
+                            <a href="#0">
+                                <li>Freeday </li>
+                            </a>
+                            <a href="#0">
+                                <li>Öus </li>
+                            </a>
+                            <a href="#0">
+                                <li>Vans </li>
+                            </a>
+                        </ul>
+                    </div>
+                </span>
+                <span class="drop">
+                    <a href="#0">
+                        <img src="img/categorias/acessorios.png" class="navicon">Acessórios</a>
+                    <div class="dropdown-content">
+                        <ul class="col-1">
+                            <h3 class="category-title">Masculino</h3>
+                            <a href="#0">
+                                <li>Bonés </li>
+                            </a>
+                            <a href="#0">
+                                <li>Viseiras </li>
+                            </a>
+                            <a href="#0">
+                                <li>Gorros </li>
+                            </a>
+                            <a href="#0">
+                                <li>Óculos de Sol </li>
+                            </a>
+                            <a href="#0">
+                                <li>Relógios </li>
+                            </a>
+                            <a href="#0">
+                                <li>Mochilas </li>
+                            </a>
+                            <a href="#0">
+                                <li>Pochetes </li>
+                            </a>
+                            <a href="#0">
+                                <li>Bucket Hat </li>
+                            </a>
+                            <a href="#0">
+                                <li>Carteiras </li>
+                            </a>
+                            <a href="#0">
+                                <li>Cintos </li>
+                            </a>
+                        </ul>
+                        <ul class="col-2">
+                            <h3 class="category-title">Feminino</h3>
+                            <a href="#0">
+                                <li>Óculos de Sol </li>
+                            </a>
+                            <a href="#0">
+                                <li>Bolsas </li>
+                            </a>
+                            <a href="#0">
+                                <li>Mochilas </li>
+                            </a>
+                            <a href="#0">
+                                <li>Estojo </li>
+                            </a>
+                            <a href="#0">
+                                <li>Relógios </li>
+                            </a>
+                            <a href="#0">
+                                <li>Carteiras </li>
+                            </a>
+                        </ul>
+                    </div>
+                </span>
+                <span class="drop outlet-btn">
+                    <a href="#0">
+                        <img src="img/categorias/outlet.png" class="navicon">Outlet</a>
+                </span>
+            </div>
+        </nav>
+    </header>
+    <!-- Main banner -->
+    <section id="main-content">
+    </section>
+    <!-- Features products -->
+    <section id="featured-products">
+        <div class="boxed columns-grid ">
+            <h3>Acabou de chegar!</h3>
+            <ul class="f-menu">
+                    <li class="f-active f-surf">Surf</li>
+                    <li class="f-clothes">Roupas</li>
+                    <li class="f-shoes">Tênis</li>
+                    <li class="f-acessories" style="border-right: 1px solid #aaa;">Acessórios</li>
+            </ul>
+        </div>
+    </section>
+<!-- Slider Section -->
+    <section class="slider-content">
+        <section id="slider-items-surf" class="boxed">
+            <ul id="items-list-surf">
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_1.png" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Long John Rip Curl E-bomb Zip
+                            </span>
+                            <span class="sub-description">
+                                Free 3/2MM
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="old-price">
+                                R$ 3.000,00
+                            </span>
+                            <span class="new-price">
+                                R$ 1.299,90
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 216,65 ou à vista R$ 1.234,91
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_2.png" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Rip Curl Mochila Ozone Mick
+                            </span>
+                            <span class="sub-description">
+                                Fanning 2.12437
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="new-price">
+                                R$ 299,90
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 49,99 ou à vista R$ 284,91
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_3.png" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Tênis Nike SB Bruin Hyperfeel
+                            </span>
+                            <span class="sub-description">
+                                Cor: Preta
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="old-price">
+                                R$ 350,00
+                            </span>
+                            <span class="new-price">
+                                R$ 299,90
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 49,99 ou à vista R$ 284,91
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_4.png" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Rip Curl Relógio Circa Gold
+                            </span>
+                            <span class="sub-description">
+                                2.11834
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="new-price">
+                                R$ 1.399,00
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 233,18 ou à vista R$ 1.329,05
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="slider-items-clothes" class="boxed hidden">
+            <ul id="items-list-clothes">
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_clothes_1.jpg" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Calça Chino Nike SB
+                            </span>
+                            <span class="sub-description">
+                                Cor: Marrom
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="old-price">
+                                R$ 250,00
+                            </span>
+                            <span class="new-price">
+                                R$ 185,00
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 31,00 ou à vista R$ 180,00
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_clothes_2.jpg" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Camiseta Öus
+                            </span>
+                            <span class="sub-description">
+                                Manga longa
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="new-price">
+                                R$ 299,90
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 49,99 ou à vista R$ 284,91
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_clothes_3.jpg" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Camiseta Skateboard
+                            </span>
+                            <span class="sub-description">
+                                Tamanho: M a GG
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="old-price">
+                                R$ 350,00
+                            </span>
+                            <span class="new-price">
+                                R$ 299,90
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 49,99 ou à vista R$ 284,91
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_clothes_4.jpg" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Camiseta DC Shoes
+                            </span>
+                            <span class="sub-description">
+                                Tamanho: PP a XGG
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="new-price">
+                                R$ 200,00
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 33,33 ou à vista R$ 185,00
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="slider-items-shoes" class="boxed hidden">
+            <ul id="items-list-shoes">
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_shoes_1.jpg" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Tênis Nike botinha
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="new-price">
+                                R$ 399,00
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 66,5 ou à vista R$ 385,00
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_shoes_2.jpg" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Tênis Adidas Essentials
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="new-price">
+                                R$ 299,90
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 49,99 ou à vista R$ 284,91
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_shoes_3.jpg" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Tênis Vans Old School
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="old-price">
+                                R$ 350,00
+                            </span>
+                            <span class="new-price">
+                                R$ 299,90
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 49,99 ou à vista R$ 284,91
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_shoes_4.jpg" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Têns Nike NB Air
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="new-price">
+                                R$ 500,00
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 83,33 ou à vista R$ 475,00
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="slider-items-acessories" class="boxed hidden">
+            <ul id="items-list-acessories">
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_acessories_4.jpg" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Mochila Nike Emocore
+                            </span>
+                            <span class="sub-description">
+                                Tamanho: M a GG
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="old-price">
+                                R$ 350,00
+                            </span>
+                            <span class="new-price">
+                                R$ 299,90
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 49,99 ou à vista R$ 284,91
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_acessories_2.jpg" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Nike SB Mochila
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="new-price">
+                                R$ 299,90
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 49,99 ou à vista R$ 284,91
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_acessories_1.jpg" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Boné Diamond
+                            </span>
+                            <span class="sub-description">
+                                Snapback
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="old-price">
+                                R$ 350,00
+                            </span>
+                            <span class="new-price">
+                                R$ 299,90
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 49,99 ou à vista R$ 284,91
+                        </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#0">
+                        <img class="align-items" src="img/product_acessories_3.jpg" />
+                        <p class="descripton-items">
+                            <span class="main-description">
+                                Mochila Nike Shock
+                            </span>
+                            <span class="sub-description">
+                                Somente na cor rosa
+                            </span>
+                        </p>
+                        <p class="price-items">
+                            <span class="old-price">
+                                R$ 350,00
+                            </span>
+                            <span class="new-price">
+                                R$ 299,90
+                            </span>
+                        </p>
+                        <p class="condition-items">
+                            6x de R$ 49,99 ou à vista R$ 284,91
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </section>
+</body>
+<script src="js/main.js"></script><!-- Main JS -->
+</html>
