@@ -7,7 +7,7 @@ jQuery(document).ready(function($){
     // LightSlider Setup
     $('#items-list-surf, #items-list-clothes, #items-list-shoes, #items-list-acessories').lightSlider({
         pager:false,
-        enableDrag: false,
+        enableDrag: true,
         item:3,
         loop:true,
         slideMove:1,
